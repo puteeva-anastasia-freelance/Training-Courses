@@ -35,7 +35,7 @@
 				<form action="#">
 					<div class="catalog-filter">
 						<label class="catalog-filter-label">Страна</label>
-						<select name="Country" id="country">
+						<select name="Country" id="country" value="">
 							<option disabled selected>Не&nbsp;выбрано</option>
 							<option>Великобритания</option>
 							<option>Испания</option>
@@ -44,7 +44,7 @@
 					</div>
 					<div class="catalog-filter">
 						<label class="catalog-filter-label">Город</label>
-						<select name="Town" id="town">
+						<select name="Town" id="town" value="">
 							<option disabled selected>Не&nbsp;выбрано</option>
 							<option>Москва</option>
 							<option>Санкт-Петербург</option>
@@ -53,7 +53,7 @@
 					</div>
 					<div class="catalog-filter">
 						<label class="catalog-filter-label">Возраст</label>
-						<select name="Age" id="age">
+						<select name="Age" id="age" value="">
 							<option disabled selected>Не&nbsp;выбрано</option>
 							<option>18-20</option>
 							<option>21-25</option>
@@ -62,7 +62,7 @@
 					</div>
 					<div class="catalog-filter">
 						<label class="catalog-filter-label">Курс</label>
-						<select name="Course" id="course">
+						<select name="Course" id="course" value="">
 							<option disabled selected>Не&nbsp;выбрано</option>
 							<option>Общий английский</option>
 							<option>Общий английский Premium</option>
@@ -71,7 +71,7 @@
 					</div>
 					<div class="catalog-filter">
 						<label class="catalog-filter-label">Длительность</label>
-						<select name="Duration" id="duration">
+						<select name="Duration" id="duration" value="">
 							<option disabled selected>Не&nbsp;выбрано</option>
 							<option>2-3 недели</option>
 							<option>Месяц</option>
@@ -80,56 +80,56 @@
 					</div>
 					<div class="catalog-filter">
 						<label class="catalog-filter-label">Проживание</label>
-						<select name="Residence" id="residence">
+						<select name="Residence" id="residence" value="">
 							<option disabled selected>Не&nbsp;выбрано</option>
 							<option>В&nbsp;одноместном номере</option>
 							<option>В&nbsp;двухместном номере</option>
 						</select>
 					</div>
 					<!-- Кнопка фильтра -->
-					<input type="submit" value="НАЙТИ" class="catalog-filter-btn">
+					<input type="submit" value="НАЙТИ" class="button catalog-filter-btn">
 				</form>
 				<!-- Выбор языка -->
-				<div class="catalog-choose-language">
+				<div class="catalog-choose-language checkbox">
 					<span class="catalog-choose-title catalog-choose-language-title">Язык</span>
-					<input type="checkbox" name="choose-language" id="language-eng" class="catalog-choose-input">
-					<label for="language-eng" class="catalog-choose-label">Английский</label>
-					<input type="checkbox" name="choose-language" id="language-deut" class="catalog-choose-input">
-					<label for="language-deut" class="catalog-choose-label">Немецкий</label>
-					<input type="checkbox" name="choose-language" id="language-czec" class="catalog-choose-input">
-					<label for="language-czec" class="catalog-choose-label">Чешский</label>
-					<input type="checkbox" name="choose-language" id="language-fren" class="catalog-choose-input">
-					<label for="language-fren" class="catalog-choose-label">Французский</label>
-					<input type="checkbox" name="choose-language" id="language-spanish" class="catalog-choose-input">
-					<label for="language-spanish" class="catalog-choose-label">Испанский</label>
+					<input type="checkbox" name="choose-language" id="language-eng" class="checkbox__input" value="">
+					<label for="language-eng" class="checkbox__label">Английский</label>
+					<input type="checkbox" name="choose-language" id="language-deut" class="checkbox__input" value="">
+					<label for="language-deut" class="checkbox__label">Немецкий</label>
+					<input type="checkbox" name="choose-language" id="language-czec" class="checkbox__input" value="">
+					<label for="language-czec" class="checkbox__label">Чешский</label>
+					<input type="checkbox" name="choose-language" id="language-fren" class="checkbox__input" value="">
+					<label for="language-fren" class="checkbox__label">Французский</label>
+					<input type="checkbox" name="choose-language" id="language-spanish" class="checkbox__input" value="">
+					<label for="language-spanish" class="checkbox__label">Испанский</label>
 				</div>
 				<!-- Выбор курортного города (да/нет) -->
-				<div class="catalog-choose-restown">
+				<div class="catalog-choose-restown checkbox">
 					<span class="catalog-choose-title catalog-choose-restown-title">Курортные города</span>
-					<input type="checkbox" class="catalog-choose-restown-checkbox" id="restown-checkbox" checked>
+					<input type="checkbox" class="catalog-choose-restown-checkbox" id="restown-checkbox" checked value="">
 					<label for="restown-checkbox" class="catalog-choose-restown-label"></label>
 				</div>
 				<!-- Выбор стоимости за 2 недели с проживанием -->
-				<div class="catalog-choose-price">
+				<div class="catalog-choose-price checkbox">
 					<span class="catalog-choose-title catalog-choose-price-title">Стоимость за&nbsp;2&nbsp;недели
 						с&nbsp;проживанием</span>
-					<input type="checkbox" name="choose-price" id="price-40" class="catalog-choose-input">
-					<label for="price-40" class="catalog-choose-label">от&nbsp;40&nbsp;000&nbsp;₽
+					<input type="checkbox" name="choose-price" id="price-40" class="checkbox__input" value="">
+					<label for="price-40" class="checkbox__label">от&nbsp;40&nbsp;000&nbsp;₽
 						до&nbsp;60&nbsp;000&nbsp;₽</label>
-					<input type="checkbox" name="choose-price" id="price-60" class="catalog-choose-input">
-					<label for="price-60" class="catalog-choose-label">от&nbsp;60&nbsp;000&nbsp;₽
+					<input type="checkbox" name="choose-price" id="price-60" class="checkbox__input" value="">
+					<label for="price-60" class="checkbox__label">от&nbsp;60&nbsp;000&nbsp;₽
 						до&nbsp;90&nbsp;000&nbsp;₽</label>
-					<input type="checkbox" name="choose-price" id="price-90" class="catalog-choose-input">
-					<label for="price-90" class="catalog-choose-label">от&nbsp;90&nbsp;000&nbsp;₽
+					<input type="checkbox" name="choose-price" id="price-90" class="checkbox__input" value="">
+					<label for="price-90" class="checkbox__label">от&nbsp;90&nbsp;000&nbsp;₽
 						до&nbsp;110&nbsp;000&nbsp;₽</label>
-					<input type="checkbox" name="choose-price" id="price-110" class="catalog-choose-input">
-					<label for="price-110" class="catalog-choose-label">от&nbsp;110&nbsp;000&nbsp;₽ и&nbsp;выше</label>
+					<input type="checkbox" name="choose-price" id="price-110" class="checkbox__input" value="">
+					<label for="price-110" class="checkbox__label">от&nbsp;110&nbsp;000&nbsp;₽ и&nbsp;выше</label>
 				</div>
 				<!-- Поиск по названию школы -->
 				<form action="#" class="catalog-search">
 					<span class="catalog-search-title">Поиск по&nbsp;названию школы</span>
 					<input type="text" class="catalog-search-input" placeholder="Название школы">
-					<input type="submit" class="catalog-search-btn" value="">
+					<input type="submit" class="button catalog-search-btn" value="">
 				</form>
 			</div>
 			<div class="col-xl-9 col-lg-8 col-md-7">
@@ -158,7 +158,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-xl-3 col-lg-4">
-								<div class="catalog-card-photo">
+								<div class="catalog-card-photo" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(img/oxford.jpg) center / cover no-repeat;">
 									<div class="catalog-card-rating">5.0</div>
 								</div>
 							</div>
@@ -195,8 +195,8 @@
 								<div class="catalog-card-info-addit-wrp">
 									<span class="catalog-card-price">от&nbsp;63&nbsp;500&nbsp;₽</span>
 									<span class="catalog-card-time">за&nbsp;2&nbsp;недели</span>
-									<button type="button" class="catalog-card-btn catalog-card-btn-more">ПОДРОБНЕЕ</button>
-									<button type="button" class="catalog-card-btn">ЗАБРОНИРОВАТЬ</button>
+									<a href="#" type="button" class="button button-white catalog-card-btn catalog-card-btn-more">ПОДРОБНЕЕ</a>
+									<button type="button" class="button catalog-card-btn">ЗАБРОНИРОВАТЬ</button>
 								</div>
 							</div>
 						</div>
@@ -207,7 +207,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-xl-3 col-lg-4">
-								<div class="catalog-card-photo">
+								<div class="catalog-card-photo" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(img/harvard.jpg) center / cover no-repeat;">
 									<div class="catalog-card-rating">5.0</div>
 								</div>
 							</div>
@@ -244,8 +244,8 @@
 								<div class="catalog-card-info-addit-wrp">
 									<span class="catalog-card-price">от&nbsp;63&nbsp;500&nbsp;₽</span>
 									<span class="catalog-card-time">за&nbsp;2&nbsp;недели</span>
-									<button type="button" class="catalog-card-btn catalog-card-btn-more">ПОДРОБНЕЕ</button>
-									<button type="button" class="catalog-card-btn">ЗАБРОНИРОВАТЬ</button>
+									<a href="#" type="button" class="button button-white catalog-card-btn catalog-card-btn-more">ПОДРОБНЕЕ</a>
+									<button type="button" class="button catalog-card-btn">ЗАБРОНИРОВАТЬ</button>
 								</div>
 							</div>
 						</div>
