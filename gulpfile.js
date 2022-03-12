@@ -50,7 +50,8 @@ gulp.task('styles', function () {
 gulp.task('scripts', function () {
 	return gulp.src([
 			'app/libs/jquery/dist/jquery.min.js',
-			'app/libs/select2/dist/js/select2.full.js',
+			'app/libs/select2/dist/js/select2.full.js',	
+			'app/libs/ui/ui.js',
 			'app/js/common.js', // Always at the end
 		])
 		.pipe(concat('scripts.min.js'))

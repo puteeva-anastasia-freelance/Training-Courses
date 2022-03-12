@@ -17,12 +17,13 @@ $color-primary: #006EE5;
 $color-primary-light: $accent;
 $color-gray: #666;
 
+$mobile: 430px;
 $tablet: 768px;
 $desktop: 992px;
-$desktop-large: 1366px;
+$desktop-average: 1200px;
+$desktop-large: 1400px;
 
 $theme-colors: ("primary": $accent,
 	"light": $bg-light);
 
-$desktop-average: 1200px;
-$mobile: 410px;
+
